@@ -1,0 +1,36 @@
+name: LineXChat
+version: 0.1.0
+description: Team LineX Chat
+author: DJ4ddi
+website: http://dev.bukkit.org/server-mods/LineXChat
+
+main: de.tl.DJ4ddi.LineXChat.Main
+database: false
+depend: [Vault]
+softdepend: [TagAPI]
+
+commands:
+  ch:
+    description: Use /ch for more information.
+    aliases: [channel]
+    usage: /ch <Subcommand>
+  tell:
+    description: Opens a channel with all receivers and sends an optional message.
+    aliases: [pm, msg]
+    usage: /tell <Receiver(s)> [Message]
+  r:
+    description: Replies to a conversation.
+    aliases: [reply]
+    usage: /r <Message>
+  say:
+    description: Broadcasts a message to the whole server.
+    aliases: [broadcast, br]
+    usage: /say <Message>
+  fake:
+    description: Use /fake for more information.
+    aliases: [f]
+    usage: /fake <Subcommand>
+  list:
+    description: Lists all online players.
+    aliases: [playerlist, who, players]
+    usage: /list
